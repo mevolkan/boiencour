@@ -26,7 +26,7 @@ if (isset($_POST['btn-update'])) {
         ?>
         <script type="text/javascript">
             alert('artist updated successfully');
-            window.location.href = 'indexartist.php';
+            window.location.href = 'index.php';
         </script>
         <?php
         } else {
@@ -39,7 +39,7 @@ if (isset($_POST['btn-update'])) {
     // sql query execution function
     }
 if (isset($_POST['btn-cancel'])) {
-    header("Location: indexartist.php");
+    header("Location: index.php");
     }
 ?>
 <?php include("../includes/header.php"); ?>
