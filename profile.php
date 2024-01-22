@@ -1,5 +1,5 @@
 <?php
-include_once '../db.php';
+include_once './db.php';
 
 if (isset($_GET['view_id'])) {
     $sql_query = "SELECT * FROM artist WHERE id=" . $_GET['view_id'];
@@ -7,7 +7,7 @@ if (isset($_GET['view_id'])) {
     $fetched_row = mysqli_fetch_array($result_set, MYSQLI_ASSOC);
     }
 ?>
-<?php include("../includes/header.php"); ?>
+<?php include("./includes/header.php"); ?>
 
 <div class="container">
     <table class="table table-striped">
@@ -32,4 +32,4 @@ if (isset($_GET['view_id'])) {
     </table>
 </div>
 
-<?php include("../includes/footer.php");
+<?php include("./includes/footer.php");

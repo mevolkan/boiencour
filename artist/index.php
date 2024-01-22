@@ -16,17 +16,13 @@ if (isset($_GET['changestatus_id'])) {
 <?php include("../includes/header.php"); ?>
 
 
-<div id="container">
-    <div id="table-responsive">
 
-    </div>
-</div>
 
-<div id="container">
+<div class="container">
     <div id="table-responsive">
         <table class="table table-striped">
             <tr>
-                <th colspan="5"><a href="add_artist.php">add artist.</a></th>
+                <th colspan="5"><a href="add.php">add artist.</a></th>
             </tr>
             <th>SL NO</th>
             <th>name</th>

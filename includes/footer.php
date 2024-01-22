@@ -30,6 +30,6 @@
   </div>
 </footer>
 <!--   Core JS Files   -->
-<script src="./assets/js/scripts.js" type="text/javascript"></script>
+<script src="../assets/js/scripts.js" type="text/javascript"></script>
 
 </html>

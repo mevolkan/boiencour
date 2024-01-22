@@ -34,19 +34,13 @@ if (isset($_POST['btn-save'])) {
 <?php include("../includes/header.php"); ?>
 
 
-<div id="container">
-    <div id="table-responsive">
-    </div>
-</div>
-<div id="container"> &<div id="table-responsive">
+
+<div class="container"> &<div id="table-responsive">
         <form method="post" enctype="multipart/form-data">
             <table class="table table-striped">
                 <tr>
                     <td align="center"><a href="indexartist.php">back to main page</a></td>
                 </tr>
-
-
-
                 <tr>
                     <td>
                         <label for="name" class="form-label">Name:</label>

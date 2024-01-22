@@ -24,6 +24,9 @@
         function view_id(id) {
             window.location.href = 'view.php?view_id=' + id;
         }
+        function artist_profile(id) {
+            window.location.href = 'profile.php?view_id=' + id;
+        }
         function delete_id(id) {
             if (confirm('Sure to Delete ?')) {
                 window.location.href = 'index.php?delete_id=' + id;
