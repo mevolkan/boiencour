@@ -49,7 +49,7 @@ if (isset($_POST['btn-cancel'])) {
     </div>
 </div>
 
-<div id="container"> &<div id="table-responsive">
+<div class="container"> <div class="table-responsive">
         <form method="post" enctype="multipart/form-data">
             <table class="table table-striped">
                 <tr>
@@ -66,7 +66,7 @@ if (isset($_POST['btn-cancel'])) {
                         <label for="bio" class="form-label">Bio:</label>
                     </td>
                     <td>
-                        <input type="text" value="<?php echo $fetched_row['bio'] ?>" class="form-control" id="bio"
+                        <input type="textbox" value="<?php echo $fetched_row['bio'] ?>" class="form-control" id="bio"
                             name="bio">
                     </td>
                 </tr>
