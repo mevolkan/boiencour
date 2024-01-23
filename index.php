@@ -69,9 +69,7 @@ include_once 'db.php';
               <div class="card-footer">
                 <a href="#" class="card-link">Listen To Album</a>
                 <a href="#" class="card-link">More by Artist</a>
-
               </div>
-
             </div>
           </div>
         </div>
@@ -81,6 +79,33 @@ include_once 'db.php';
       ?>
 
     </div>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="" pb-1>Songs</h2>
+    <table class="table">
+      <?php
+      $sql_query = "SELECT * FROM `music`";
+      $result_set = mysqli_query($con, $sql_query);
+      $i = 1;
+      while ($row = mysqli_fetch_row($result_set)) {
+        ?>
+        <tr>
+          <th class="card-title"><a href="javascript:view_id('<?php echo $row[0]; ?>')"> <?php echo $row[1]; ?> </a>
+          </th>
+          <td><a href="javascript:view_id('<?php echo $row[3]; ?>')" class="card-text">Artist: <?php echo $row[7]; ?> </a>
+          </td>
+          <td><?php echo $row[2]; ?></td>
+          <td><audio controls>
+              <source src="./music/uploads/<?php echo $row[6]; ?>" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio></td>
+          <?php
+          $i++;
+        }
+      ?>
+
+    </table>
   </section>
 </body>
 <?php include("./includes/footer.php");
